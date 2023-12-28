@@ -45,7 +45,7 @@ public class ClientHandler implements Runnable {
                 writer.close();
                 clientSocket.close();
                 chatServer.clients.remove(this);
-                chatServer.appendToChatArea("A client disconnected");
+                chatServer.appendToChatArea("A student disconnected");
             } catch (IOException e) {
                 e.printStackTrace();
             }
